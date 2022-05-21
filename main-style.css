@@ -1,0 +1,261 @@
+
+
+header{
+  background:  linear-gradient(rgb(13 28 88 / 10%),rgb(13 28 88 / 10%)), url(glacier-03.jpg) ;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.navbar-nav{
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  padding: 10px ;
+  background: #ffffff47;
+  border-radius: 50px;
+  box-shadow: inset 0 0 10px 0 #fff;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  border-radius: 50px;
+  padding: 9px 15px;
+  font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  background-color: #00075e;
+  color: rgb(245, 245, 255);
+}
+header h1{
+  text-align: center;
+  margin-top: 108px;
+  font-size: 70px;
+  color: #00075e;
+}
+.row{
+  justify-content: center;
+  gap: 60px;
+}
+/* start work */
+.work{
+  padding: 100px;
+  text-align: center;
+}
+.work h2{
+  font-size: 45px;
+  color: #00075e;
+}
+.sub-title{
+  font-size: 13px;
+  margin-top: 0;
+}
+.work .row{
+  margin-top: 60px;
+  align-items: center;
+}
+.work .contnet{
+  text-align: left;
+}
+.work .contnet p{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+}
+/* end work */
+/* start info */
+.info{
+  padding: 100px;
+  background-color: #eee;
+}
+.info .img{
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  /* background-color: red; */
+}
+.info .img::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #000ba7b9;
+  transition: .5s;
+}
+.info .img img{
+  height: 570px;
+}
+.info .img .custom{
+  transition: .5s;
+  transform: translateY(450px);
+  padding: 20px;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.info .img .custom h2{
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+.info .img .custom p{
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.info .img:hover.img::before{
+  opacity: 1;
+}
+.info .img:hover .custom{
+  transform: translateY(0px);
+}
+/* end info */
+/* start contact us */
+.contact-us{
+  padding: 100px;
+  text-align: center;
+}
+.contact-us .row{
+  margin-top: 50px;
+}
+.contact-us .info{
+  background-color: transparent;
+  padding: 0;
+}
+.contact-us .info .coustom{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-us .info .content{
+  text-align: left;
+  margin-left: 20px;
+}
+.contact-us .info .content h4{
+  margin-bottom: 0;
+}
+.contact-us .info .content p{
+  margin-bottom: 0px;
+}
+.contact-us .info [class*="fa-"]{
+  font-size: 35px;
+  color: #00075e;
+}
+.contact-us .location iframe{
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.contact-us form{
+  display: grid;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+.contact-us form input, .contact-us form textarea{
+  margin: 10px 0 ;
+  font-size: 18px;
+  border: solid 1px #ccc;
+  background-color: #f0f0f0;
+  outline: none;
+  padding: 10px;
+}
+.contact-us form button{
+  padding: 10px 20px;
+  border: 1px solid #00075e;
+  background-color: transparent;
+  transition: .5s;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.contact-us form button:hover{
+  background-color: #00075e;
+  color: #fff;
+}
+/* end contact us  */
+/* start offer */
+.offer {
+  padding: 110px;
+  text-align: center;
+  background:linear-gradient( rgba(0, 0, 0, 0.13) 100%, rgba(0, 0, 0, 0.178) 0%), url(banner-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.329);
+}
+.offer h2{
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.offer p{
+  font-size: 20px;
+  color: #000550;
+  font-weight: 500;
+}
+.offer input{
+  width: 55%;
+  padding: 9px;
+  font-size: 18px;
+  outline: none;
+}
+.offer button{
+  padding: 11px 30px;
+  outline: none;
+  border: solid 1px #00075e;
+  background-color: transparent;
+  transition: .5s;
+  font-weight: 500;
+  color: #fff;
+}
+.offer button:hover{
+  background-color: #00075e;
+}
+
+/* end offer */
+/* start footer */
+footer{
+  padding: 100px;
+  padding-bottom: 50px;
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+}
+footer h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer ul{
+  list-style: none;
+  padding-left:10px ;
+}
+footer li{
+  font-weight: 400;
+  line-height: 30px;
+}
+footer .icon ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .row p{
+  color:#fff;
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+footer .icon{
+  font-size: 20px;
+}
+footer hr{
+  margin-bottom: 5px;
+}
+footer p{
+  color: #777;
+  text-align: right;
+}
+/* end footer */
+
+
